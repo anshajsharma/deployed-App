@@ -1,0 +1,281 @@
+html,
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background-color: rgb(245,245,245);
+}
+
+.grid-root{
+  background-color: rgb(245,245,245);
+  margin-top: 25px;
+}
+
+.container {
+  margin: 80px 0 0 0;
+
+}
+.nav-container {
+  margin: auto;
+}
+.nav-container svg {
+  color: #fff;
+}
+
+#asdfgh{
+  margin-top: 0px;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.scream-card{
+  display: 'flex';
+
+  margin-bottom: 20px;
+}
+
+.scream-profile-image{
+  min-width: 200px;
+}
+.scream-content{
+  padding: 150;
+}
+#postSection{
+    width: 100%;
+    align-items: center;
+}
+
+#qwerty{
+  width: 150px;
+  height: 150px;
+}
+#profilePicBox{
+  width: 150px;
+  height: 150px;
+}
+#profilePic{
+  height: 20%;
+  width: 20%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+/* body {
+  background: #e9eaed;
+  font-family: arial, sans-serif;
+} */
+
+.text-desc, [class*="reaction-"], .field-reactions, .field-reactions:checked:focus ~ .text-desc {
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.field-reactions:focus ~ .text-desc, .boxFB:hover [class*="reaction-"], .field-reactions:checked ~ [class*="reaction-"] {
+  clip: auto;
+  overflow: visible;
+  opacity: 1;
+}
+
+.main-title {
+  background: #3a5795;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.text-desc {
+  font-weight: normal;
+  text-align: center;
+  transform: translateY(-50px);
+  white-space: nowrap;
+  font-size: 13px;
+  width: 100%;
+}
+
+[class*="reaction-"] {
+  border: none;
+  background-image: url(http://deividmarques.github.io/facebook-reactions-css/assets/images/facebook-reactions.png);
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  z-index: 11;
+  top: -28;
+  transform-origin: 50% 100%;
+  transform: scale(0.1);
+  transition: all 0.3s;
+  outline: none;
+  will-change: transform;
+  opacity: 0;
+}
+
+.boxFB {
+  position: absolute;
+  left: calc(40%);
+  bottom: calc(25px);
+  width: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+  visibility: hidden;
+}
+
+.field-reactions:focus ~ .label-reactions {
+  border-color: rgba(88, 144, 255, 0.3);
+}
+.field-reactions:checked:focus ~ .label-reactions {
+  border-color: transparent;
+}
+
+.toolbox {
+  background: #fff;
+  height: 52px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  border-radius: 40px;
+  top: -30px;
+  left: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.legend-reaction {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  line-height: 20px;
+  max-width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 6px;
+  transition: opacity 50ms ease;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: -28px;
+  transform: translateX(-50%);
+}
+
+.boxFB:hover [class*="reaction-"] {
+  transform: scale(0.8) translateY(-40px);
+}
+.boxFB:hover [class*="reaction-"]:hover, .boxFB:hover [class*="reaction-"]:focus {
+  transition: all 0.2s ease-in;
+  transform: scale(1) translateY(-35px);
+}
+.boxFB:hover [class*="reaction-"]:hover .legend-reaction, .boxFB:hover [class*="reaction-"]:focus .legend-reaction {
+  opacity: 1;
+}
+.boxFB:hover .toolbox {
+  opacity: 1;
+}
+.boxFB:hover .toolbox {
+  visibility: visible;
+}
+.boxFB:hover .reaction-love {
+  transition-delay: 0.06s;
+}
+.boxFB:hover .reaction-haha {
+  transition-delay: 0.09s;
+}
+.boxFB:hover .reaction-wow {
+  transition-delay: 0.12s;
+}
+.boxFB:hover .reaction-sad {
+  transition-delay: 0.15s;
+}
+.boxFB:hover .reaction-angry {
+  transition-delay: 0.18s;
+}
+
+.field-reactions:checked ~ [class*="reaction-"] {
+  transform: scale(0.8) translateY(-40px);
+}
+.field-reactions:checked ~ [class*="reaction-"]:hover, .field-reactions:checked ~ [class*="reaction-"]:focus {
+  transition: all 0.2s ease-in;
+  transform: scale(1) translateY(-35px);
+}
+.field-reactions:checked ~ [class*="reaction-"]:hover .legend-reaction, .field-reactions:checked ~ [class*="reaction-"]:focus .legend-reaction {
+  opacity: 1;
+}
+.field-reactions:checked ~ .toolbox {
+  opacity: 1;
+}
+.field-reactions:checked ~ .toolbox,
+.field-reactions:checked ~ .overlay {
+  visibility: visible;
+}
+.field-reactions:checked ~ .reaction-love {
+  transition-delay: 0.03s;
+}
+.field-reactions:checked ~ .reaction-haha {
+  transition-delay: 0.09s;
+}
+.field-reactions:checked ~ .reaction-wow {
+  transition-delay: 0.12s;
+}
+.field-reactions:checked ~ .reaction-sad {
+  transition-delay: 0.15s;
+}
+.field-reactions:checked ~ .reaction-angry {
+  transition-delay: 0.18s;
+}
+
+.reaction-like {
+  left: 0;
+  background-position: 0 -144px;
+}
+
+.reaction-love {
+  background-position: -48px 0;
+  left: 50px;
+}
+
+.reaction-haha {
+  background-position: -96px 0;
+  left: 100px;
+}
+
+.reaction-wow {
+  background-position: -144px 0;
+  left: 150px;
+}
+
+.reaction-sad {
+  background-position: -192px 0;
+  left: 200px;
+}
+
+.reaction-angry {
+  background-position: -240px 0;
+  left: 250px;
+}
